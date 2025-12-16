@@ -66,8 +66,8 @@ public class SistemaGerenciaProfsMap implements SistemaGerenciaProfs {
         if (this.disciplinas.containsKey(codigoDisciplina)) {
             throw new DisciplinaJaExisteException("Já existe disciplina com código: " + codigoDisciplina);
         }
-        Disciplina nova = new Disciplina(nomeDisciplina, codigoDisciplina, matriculaProfessor, horarios);
-        this.disciplinas.put(codigoDisciplina, nova);
+       else{ Disciplina nova = new Disciplina(nomeDisciplina, codigoDisciplina, matriculaProfessor, horarios);
+        this.disciplinas.put(codigoDisciplina, nova);}
 
     }
 
